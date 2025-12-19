@@ -8,37 +8,74 @@ Pomodoro {
 }
 
 #main-container {
-    layout: horizontal;
-    height: 100%;
     width: 100%;
-}
-
-#button-column {
-    width: auto;
-    height: 100%;
-    layout: vertical;
-    padding-right: 4;
-}
-
-#timer-container {
-    width: 1fr;
     height: 100%;
     align: center middle;
 }
 
+#timer-section {
+    width: auto;
+    height: auto;
+    layout: vertical;
+    align: center middle;
+}
+
 #timer {
-    content-align: center middle;
-    width: 40;
-    height: 5;
+    width: 50;
+    height: 7;
     color: $text;
+    text-style: bold;
+    padding: 2 4;
+    margin-bottom: 1;
+    content-align: center middle;
+}
+
+#sessions-label {
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-bottom: 2;
+    text-style: bold;
+}
+
+#button-row {
+    width: auto;
+    height: auto;
+    align: center middle;
+    margin-bottom: 2;
+}
+
+#input-section {
+    width: auto;
+    height: auto;
+    layout: vertical;
+    align: center top;
+}
+
+.input-row {
+    width: auto;
+    height: auto;
+    align: center middle;
+    margin: 1 0;
+}
+
+.time-input {
+    width: 10;
+    margin: 0 1;
+}
+
+Label {
+    width: auto;
+    padding: 0 1;
 }
 
 Button {
-    padding: 1 4;
+    padding: 1 3;
     height: 5;
-    min-width: 20;
+    min-width: 15;
     border: round $accent;
     content-align: center middle;
+    margin: 0 1;
 }
 
 Button#start { 
